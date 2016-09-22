@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ES6 IDLE CLICKER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="topbar">
+
+  </div>
+  <div class="shop">
+    <button id="buySalesmanBtn">
+      Salesman, $
+      <span id="salesmanCost"></span><br><br>
+      level: <span id="amountSalesman" class="amount">
+    </button>
+    <button id="buyLemonadeStandBtn">
+      Lemonade stand, $
+      <span id="lemonadestandCost"></span><br><br>
+      level:<span id="amountLemonadeStand" class="amount"></span>
+    </button>
+    <button id="buyGreengrocersBtn">
+      Greengrocers, $
+      <span id="greengrocersCost"></span><br><br>
+      level: <span id="amountGreengrocers" class="amount"></span>
+    </button>
+    <button id="buyShopBtn">
+      Shop, $
+      <span id="shopCost"></span><br><br>
+      level: <span id="amountShop" class="amount"></span>
+    </button>
+    <button id="buySupermarketBtn">
+      Supermarket, $
+      <span id="supermarketCost"></span><br><br>
+      level: <span id="amountSupermarket" class="amount"></span>
+    </button>
+    <button id="buyCorporationBtn">
+      Corporation, $
+      <span id="corporationCost"></span><br><br>
+      level: <span id="amountCorporation" class="amount"></span>
+    </button>
+  </div>
+
+  <div class="scoreboard">
+    <p id="coinsAmount"></p>
+    <span id="coinsPerSecond"></span>
+  </div>
+
+  <div class="leftbar">
+    <button type="button" id="showUpgrades">Upgrades</button>
+
+
+    <div class="upgrades" id="allUpgrades">
+      <div class="upgrade" data-tooltip="Double click power - 300$">
+        <button id="doubleCoinsUpgrade"></button>
+      </div>
+      <div class="upgrade" data-tooltip="Triple click power - 1000$">
+        <button id="tripleCoinsUpgrade"></button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="coinWrapper">
+    <button type="button" class="coin" id="addCoinBtn">GET COINZ</button>
+  </div>
+
+  </body>
+
+  <script src="bundle.js"></script>
+  <script src="custom.js"></script>
+</html>

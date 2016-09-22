@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  flex-wrap: wrap; }
+  body .topbar {
+    background-color: #000011;
+    height: 50px;
+    width: 100%; }
+  body .shop {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    height: calc(100vh - 50px);
+    overflow: hidden; }
+    body .shop button {
+      width: 100%;
+      height: calc(100vh / 6 - 8.5px);
+      border: 0;
+      margin: 0; }
+  body .scoreboard {
+    width: 80%;
+    padding: 0;
+    background-color: #c1c1c1;
+    text-align: center; }
+    body .scoreboard p {
+      font-size: 36px;
+      padding: 5px 0;
+      margin: 0;
+      position: relative;
+      top: 10px; }
+    body .scoreboard span {
+      position: relative;
+      top: -40px;
+      left: 80px; }
+  body .coinWrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 250px; }
+    body .coinWrapper .coin {
+      font-size: 60px;
+      background-color: #c1c1c1;
+      padding: 5%; }
+
+/*# sourceMappingURL=style.css.map */

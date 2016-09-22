@@ -1,0 +1,132 @@
+body
+  display: flex
+  flex-wrap: wrap
+  background-color: #272727
+  .topbar
+    background-color: #000011
+    height: 50px
+    width: 100%
+  .shop
+    width: 20%
+    position: absolute
+    right: 0
+    top: 50px
+    height: calc(100vh - 50px)
+    overflow: hidden
+    z-index: 888
+    button
+      width: 100%
+      height: calc(100vh / 6 - 8.5px)
+      margin: 0
+      border: 1px solid #000000
+      background-color: #2e2e2e
+      color: #999999
+      transition: .1s
+      &:hover
+        background-color: #8c8c8c
+        color: #ffffff
+        cursor: pointer
+        transition: .1s
+
+
+
+
+  .scoreboard
+    width: 80%
+    padding: 0
+    text-align: center
+    background-color: lighten(#2e2e2e, 10%)
+    color: #ffffff
+    p
+      font-size: 36px
+      padding: 20px 0
+      margin: 0
+      position: relative
+    span
+      padding: 0
+      margin: 0
+      position: relative
+      bottom: 10px
+
+
+  .coinWrapper
+    position: absolute
+    left: 28.5%
+    right: 0
+    top: 250px
+    .coin
+      font-size: 40px
+      border: 1px solid #ffffff
+      padding: 5%
+      background-color: #2e2e2e
+      color: #999999
+      transition: .1s
+      &:hover
+        background-color: #8c8c8c
+        color: #ffffff
+        cursor: pointer
+        transition: .1s
+
+      &:hover
+        cursor: pointer
+        background-color: lighten(#4b4b4b, 5%)
+
+
+
+  .leftbar
+    position: absolute
+    top: 150px
+    left: 10px
+
+  .showUpgrades
+    display: flex !important
+  #showUpgrades
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: 2px
+    border: 1px solid #000000
+    background-color: #2e2e2e
+    padding: 10px
+    color: #999999
+    transition: .1s
+    &:hover
+      background-color: #8c8c8c
+      color: #ffffff
+      cursor: pointer
+      transition: .1s
+
+  .upgrades
+    top: 40px
+    display: none
+
+    .upgrade
+      margin: 5%
+      &:hover
+        &:before
+          content: attr(data-tooltip)
+          width: 150%
+          line-height: 2em
+          padding: 1px 1px 1px 10px
+          border: 0
+          background-color: rgba(#ffffff, .5)
+          position: absolute
+          bottom: -60%
+          color: #000000
+
+
+
+
+    button
+      height: 50px
+      width: 50px
+      border: 0
+      cursor: pointer
+      &:first-child
+        background-image: url("assets/icons/doubleClickPower.jpg")
+      &:nth-child(2)
+        background-image: url("assets/icons/tripleClickPower.jpg")
+
+      &:disabled
+        opacity: 0.5
+        cursor: not-allowed
+
